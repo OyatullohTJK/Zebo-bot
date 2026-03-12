@@ -94,7 +94,7 @@ user_orders_history = {}
 user_birthdays = {}
 referrals = {}
 
-SPICY_ICONS = {0: "", 1: "🌶️", 2: "🌶️🌶️", 3: "🌶️🌶️🌶️"}
+SPICY_ICONS = {0: "", 1: "🌶️", 2: "🌶️🌶️", 3: "🌶️🌶️🌶️•"}
 
 
 def main_kb(user_id=None):
