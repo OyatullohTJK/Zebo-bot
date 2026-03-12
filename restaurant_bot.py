@@ -12,31 +12,38 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "ВСТАВЬ_ТОКЕН_ЗДЕСЬ")
 
 KITCHEN_INFO = {
-    "name": "Ошхони ЗЕБО",
-    "address": "Вставь свой адрес здесь",
-    "phone": "+992 XX XXX XXXX",
-    "hours": "Пн-Вс: 10:00 - 22:00",
-    "location_lat": 55.7558,
-    "location_lon": 37.6176,
+    "name": "Ошхонаи ЗЕБО",
+    "address": "Бозори марказии шаҳри Исфара дар зери маҷмуаи Зебо",
+    "phone": "+992 025971616",
+    "hours": "Вақти корӣ: 7:00 - 17:00",
+    "location_lat": 40.12498,
+    "location_lon": 70.62566,
 }
 
 MENU = {
-    "Салаты": [
-        {"name": "Цезарь с курицей", "price": 350, "desc": "Хрустящий салат с курицей и пармезаном", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Caesar_salad_%281%29.jpg/800px-Caesar_salad_%281%29.jpg"},
-        {"name": "Греческий салат", "price": 280, "desc": "Свежие овощи, маслины, сыр фета", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Greek_salad.jpg/800px-Greek_salad.jpg"},
+    "Хӯришҳо": [
+        {"name": "Цезарь бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, барги салат, нончаҳои биреншуда(croutons), панири (parmesan), майонез ё зардии тухм, сир, шарбати лимӯ, равғани зайтун, панири пармезан, намак ва қаламфури сиёҳ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Caesar_salad_%281%29.jpg/800px-Caesar_salad_%281%29.jpg"},
+        {"name": "Хӯриши Юнонӣ", "price": 5, "desc": "Сабзавои тару тоза, Зайтун, панири фета", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Greek_salad.jpg/800px-Greek_salad.jpg"},
+        {"name": "Алевия бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, картошка, сабзӣ, тухм, бодиринги намакӣ, нахӯди консервашуда, майонез", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Caesar_salad_%281%29.jpg/800px-Caesar_salad_%281%29.jpg"},
+        {"name": "Хуриши Агарот", "price": 5, "desc": "Бодиринги тару тоза, помидор, карам, сабзӣ,қаламфури булғорӣ, кабудиҳо(шибит ва петрушка), намак, равғани растанӣ, сирко е шарбати лимӯ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Greek_salad.jpg/800px-Greek_salad.jpg"},
     ],
-    "Горячие блюда": [
-        {"name": "Паста Карбонара", "price": 420, "desc": "Спагетти, бекон, яйцо, пармезан", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fresh_made_Carbonara_from_Rome.jpg/800px-Fresh_made_Carbonara_from_Rome.jpg"},
-        {"name": "Стейк из курицы", "price": 380, "desc": "Куриная грудка на гриле с гарниром", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grilled-chicken.jpg/800px-Grilled-chicken.jpg"},
-        {"name": "Борщ домашний", "price": 220, "desc": "Наваристый борщ со сметаной", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Borscht_served_in_Minsk%2C_Belarus.jpg/800px-Borscht_served_in_Minsk%2C_Belarus.jpg"},
+    "Хӯрокҳои гарм": [
+        {"name": "Хом Шӯрбо бо гушти гов", "price": 12, "desc": "Гӯшти гови устухондор, сабзӣ, картошка, дунба ё равған, помидор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fresh_made_Carbonara_from_Rome.jpg/800px-Fresh_made_Carbonara_from_Rome.jpg"},
+        {"name": "Ҷаварӣ", "price": 12, "desc": "Гӯшти қима ва гов, Донагиҳо ( мош, лубие ё фасол), сабзавот, равған", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grilled-chicken.jpg/800px-Grilled-chicken.jpg"},
+        {"name": "Мастова", "price": 12, "desc": "Гӯшти гов ё гӯсфанд, биринҷ, сабзавот, равган", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Borscht_served_in_Minsk%2C_Belarus.jpg/800px-Borscht_served_in_Minsk%2C_Belarus.jpg"},
+        {"name": "Хом Шӯрбо бо гушти гӯсфанд", "price": 12, "desc": "Гӯшти гӯсфанди и устухондор, сабзӣ, картошка, дунба ё равған, помидор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fresh_made_Carbonara_from_Rome.jpg/800px-Fresh_made_Carbonara_from_Rome.jpg"},
+        {"name": "Рассолник", "price": 12, "desc": "Гӯшти қима ва гов, бодиринги намакӣ, сабзавот, ҷави марворид (перловка), биринҷ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grilled-chicken.jpg/800px-Grilled-chicken.jpg"},  
     ],
-    "Пицца": [
-        {"name": "Маргарита", "price": 450, "desc": "Томатный соус, моцарелла, базилик", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"},
-        {"name": "Пепперони", "price": 520, "desc": "Томатный соус, моцарелла, пепперони", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"},
+    "Хӯрокҳои дуюм": [
+        {"name": "Картошка бирен", "price": 12, "desc": "Картошка, равған, намак", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"},
+        {"name": "Картошка пюре", "price": 12, "desc": "картошка, равғани маска, намак", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"},
+        {"name": "Макарон", "price": 12, "desc": "Макарон, равған, намак, об", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"},
+        {"name": "Марҷумак (гречка)", "price": 12, "desc": "Марҷумак (гречка), об, намак, равғани маска", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"},
     ],
     "Напитки": [
-        {"name": "Свежевыжатый сок", "price": 180, "desc": "Апельсин / яблоко / морковь", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OrangeJuice.jpg/800px-OrangeJuice.jpg"},
-        {"name": "Чай и Кофе", "price": 120, "desc": "Горячие напитки на выбор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG"},
+        {"name": "Соки натуралӣ", "price": 3, "desc": "олуча / зардолу / шафтолу", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OrangeJuice.jpg/800px-OrangeJuice.jpg"},
+        {"name": "Чойҳо", "price": 2, "desc": "Горячие напитки на выбор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG"},
+        {"name": "Обҳои газнок", "price": 13, "desc": "Горячие напитки на выбор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG"},
     ],
 }
 
