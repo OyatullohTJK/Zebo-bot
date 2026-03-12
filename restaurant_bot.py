@@ -9,7 +9,7 @@ from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8656115624:AAHyHXjsCnYWiX_sgNFzPG1ZmYyFfZ4jvBQ")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "ВСТАВЬ_ТОКЕН_ЗДЕСЬ")
 ADMIN_ID = 5660517750
 
 KITCHEN_INFO = {
