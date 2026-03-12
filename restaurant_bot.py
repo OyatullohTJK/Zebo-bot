@@ -19,29 +19,51 @@ KITCHEN_INFO = {
 }
 
 MENU = {
-    "Хӯришҳо": [
-        {"name": "Цезарь бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, барги салат, нончаҳои биреншуда, панири parmesan, майонез, сир, шарбати лимӯ, равғани зайтун, намак ва қаламфури сиёҳ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Caesar_salad_%281%29.jpg/800px-Caesar_salad_%281%29.jpg"},
-        {"name": "Хӯриши Юнонӣ", "price": 5, "desc": "Сабзавои тару тоза, Зайтун, панири фета", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Greek_salad.jpg/800px-Greek_salad.jpg"},
-        {"name": "Алевия бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, картошка, сабзӣ, тухм, бодиринги намакӣ, нахӯди консервашуда, майонез", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Caesar_salad_%281%29.jpg/800px-Caesar_salad_%281%29.jpg"},
-        {"name": "Хуриши Агарот", "price": 5, "desc": "Бодиринги тару тоза, помидор, карам, сабзӣ, қаламфури булғорӣ, кабудиҳо, намак, равғани растанӣ, сирко е шарбати лимӯ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Greek_salad.jpg/800px-Greek_salad.jpg"},
+    "🥗 Хӯришҳо": [
+        {"name": "Цезарь бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, барги салат, нончаҳои биреншуда, панири parmesan, майонез, сир, шарбати лимӯ"},
+        {"name": "Хӯриши Юнонӣ", "price": 5, "desc": "Сабзавои тару тоза, зайтун, панири фета"},
+        {"name": "Алевия бо гушти мург", "price": 5, "desc": "Гӯшти мурғ, картошка, сабзӣ, тухм, бодиринги намакӣ, нахӯди консервашуда, майонез"},
+        {"name": "Хуриши Агарот", "price": 5, "desc": "Бодиринги тару тоза, помидор, карам, сабзӣ, қаламфури булғорӣ, кабудиҳо, намак, равғани растанӣ"},
     ],
-    "Хӯрокҳои гарм": [
-        {"name": "Хом Шӯрбо бо гушти гов", "price": 12, "desc": "Гӯшти гови устухондор, сабзӣ, картошка, дунба ё равған, помидор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Borscht_served_in_Minsk%2C_Belarus.jpg/800px-Borscht_served_in_Minsk%2C_Belarus.jpg"},
-        {"name": "Ҷаварӣ", "price": 12, "desc": "Гӯшти қима ва гов, донагиҳо (мош, лубие ё фасол), сабзавот, равған", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grilled-chicken.jpg/800px-Grilled-chicken.jpg"},
-        {"name": "Мастова", "price": 12, "desc": "Гӯшти гов ё гӯсфанд, биринҷ, сабзавот, равган", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fresh_made_Carbonara_from_Rome.jpg/800px-Fresh_made_Carbonara_from_Rome.jpg"},
-        {"name": "Хом Шӯрбо бо гушти гӯсфанд", "price": 12, "desc": "Гӯшти гӯсфанди устухондор, сабзӣ, картошка, дунба ё равған, помидор", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Borscht_served_in_Minsk%2C_Belarus.jpg/800px-Borscht_served_in_Minsk%2C_Belarus.jpg"},
-        {"name": "Рассолник", "price": 12, "desc": "Гӯшти қима ва гов, бодиринги намакӣ, сабзавот, ҷави марворид, биринҷ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Grilled-chicken.jpg/800px-Grilled-chicken.jpg"},
+    "🍲 Хӯрокҳои гарм": [
+        {"name": "Хом Шӯрбо бо гушти гов", "price": 12, "desc": "Гӯшти гови устухондор, сабзӣ, картошка, дунба ё равған, помидор"},
+        {"name": "Ҷаварӣ", "price": 12, "desc": "Гӯшти қима ва гов, донагиҳо (мош, лубие ё фасол), сабзавот, равған"},
+        {"name": "Мастова", "price": 12, "desc": "Гӯшти гов ё гӯсфанд, биринҷ, сабзавот, равган"},
+        {"name": "Хом Шӯрбо бо гушти гӯсфанд", "price": 12, "desc": "Гӯшти гӯсфанди устухондор, сабзӣ, картошка, дунба ё равған, помидор"},
+        {"name": "Рассолник", "price": 12, "desc": "Гӯшти қима ва гов, бодиринги намакӣ, сабзавот, ҷави марворид, биринҷ"},
     ],
-    "Хӯрокҳои дуюм": [
-        {"name": "Картошка бирен", "price": 12, "desc": "Картошка, равған, намак", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"},
-        {"name": "Картошка пюре", "price": 12, "desc": "Картошка, равғани маска, намак", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"},
-        {"name": "Макарон", "price": 12, "desc": "Макарон, равған, намак, об", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/800px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"},
-        {"name": "Марҷумак (гречка)", "price": 12, "desc": "Марҷумак, об, намак, равғани маска", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Supreme_pizza.jpg/800px-Supreme_pizza.jpg"},
+    "🍽️ Хӯрокҳои дуюм": [
+        {"name": "Картошка бирен", "price": 12, "desc": "Картошка, равған, намак"},
+        {"name": "Картошка пюре", "price": 12, "desc": "Картошка, равғани маска, намак"},
+        {"name": "Макарон", "price": 12, "desc": "Макарон, равған, намак, об"},
+        {"name": "Марҷумак (гречка)", "price": 12, "desc": "Марҷумак, об, намак, равғани маска"},
     ],
-    "Нӯшокиҳо": [
-        {"name": "Соки натуралӣ", "price": 3, "desc": "Олуча / зардолу / шафтолу", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/OrangeJuice.jpg/800px-OrangeJuice.jpg"},
-        {"name": "Чойҳо", "price": 2, "desc": "Чойи сабз ё сиёҳ", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG"},
-        {"name": "Обҳои газнок", "price": 3, "desc": "Оби газнок хунук", "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/800px-A_small_cup_of_coffee.JPG"},
+    "🌭 Колбаса ва сосис": [
+        {"name": "Сосиска", "price": 3, "desc": "Сосискаи тару тоза"},
+        {"name": "Сарделька", "price": 9, "desc": "Сарделькаи калон ва хушмаза"},
+        {"name": "Колбаса", "price": 4, "desc": "Колбасаи буришашуда"},
+        # 💡 Пешниҳоди мо:
+        {"name": "Сосиска бо картошка", "price": 1, "desc": "Сосиска + картошка пюре — комбои серсер!"},
+    ],
+    "🔥 Шашлик ва кабоб": [
+        {"name": "Сихкабоб бо г. Гови қима", "price": 14, "desc": "Шашлики гӯшти қимаи гов, бо сабзавот"},
+        {"name": "Сихкабоб бо г. Мурғин", "price": 14, "desc": "Шашлики гӯшти мурғ, мулоим ва хушмаза"},
+        {"name": "Сихкабоб бо г. Биқин", "price": 20, "desc": "Шашлики гӯшти биқин — серравған ва бисёр хушмаза"},
+        {"name": "Самбусаи танӯрӣ", "price": 8, "desc": "Самбусаи танӯрӣ бо гӯшт, тару тоза аз танӯр"},
+        {"name": "Самбӯсаи Духобка", "price": 3, "desc": "Самбӯсаи хурд — Кадугин, гӯшти қима ва алафӣ"},
+        # 💡 Пешниҳоди мо:
+        {"name": "Комбо Шашлик", "price": 45, "desc": "2 сих кабоб + самбуса + нӯшокӣ — сарфакорона!"},
+    ],
+    "🎂 Шириниҳо": [
+        {"name": "Наполеон", "price": 10, "desc": "Торти Наполеон — қабатҳои тунук бо кремии ширин"},
+        {"name": "Медовик", "price": 12, "desc": "Торти асал — мулоим ва хушбӯй"},
+        # 💡 Пешниҳоди мо:
+        {"name": "Ширинии рӯз", "price": 10, "desc": "Ширинии махсуси имрӯза — ҳар рӯз фарқ! Аз ошпаз бипурсед"},
+    ],
+    "🥤 Нӯшокиҳо": [
+        {"name": "Соки натуралӣ", "price": 3, "desc": "Олуча / зардолу / шафтолу"},
+        {"name": "Чойҳо", "price": 2, "desc": "Чойи кабуд ё сиёҳ"},
+        {"name": "Обҳои газнок", "price": 13, "desc": "Оби газнок хунук"},
     ],
 }
 
@@ -92,7 +114,7 @@ async def cb_category(update: Update, context: ContextTypes.DEFAULT_TYPE):
     category = q.data.split("|", 1)[1]
     context.user_data["cat"] = category
     dishes = MENU[category]
-    kb = [[InlineKeyboardButton(f"{d['name']} - {d['price']} сомон", callback_data=f"dish|{i}")] for i, d in enumerate(dishes)]
+    kb = [[InlineKeyboardButton(f"{d['name']} — {d['price']} с", callback_data=f"dish|{i}")] for i, d in enumerate(dishes)]
     kb.append([InlineKeyboardButton("◀️ Бозгашт", callback_data="menu")])
     await q.edit_message_text(f"{category}\n\nТаомро интихоб кунед:", reply_markup=InlineKeyboardMarkup(kb))
 
@@ -108,13 +130,8 @@ async def cb_dish(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("➕ Ба сабад", callback_data=f"add|{idx}")],
         [InlineKeyboardButton("◀️ Бозгашт", callback_data="cat|" + category)],
     ])
-    caption = f"{dish['name']}\n\n{dish['desc']}\n\nНарх: {dish['price']} сомон"
-    try:
-        await q.message.reply_photo(photo=dish["photo_url"], caption=caption, reply_markup=kb)
-        await q.message.delete()
-    except Exception as e:
-        logging.error(f"Photo error: {e}")
-        await q.edit_message_text(caption, reply_markup=kb)
+    text = f"🍽️ *{dish['name']}*\n\n📝 {dish['desc']}\n\n💰 Нарх: *{dish['price']} сомон*"
+    await q.edit_message_text(text, parse_mode="Markdown", reply_markup=kb)
 
 
 async def cb_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -134,10 +151,7 @@ async def cb_add(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("🛒 Сабад", callback_data="cart")],
         [InlineKeyboardButton("📋 Идома", callback_data="menu")],
     ])
-    try:
-        await q.edit_message_caption(caption=f"✅ {dish['name']} илова шуд!\n\nЧи карданием?", reply_markup=kb)
-    except Exception:
-        await q.edit_message_text(f"✅ {dish['name']} илова шуд!\n\nЧи карданием?", reply_markup=kb)
+    await q.edit_message_text(f"✅ *{dish['name']}* илова шуд!\n\nЧи карданием?", parse_mode="Markdown", reply_markup=kb)
 
 
 async def cb_cart(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -149,22 +163,22 @@ async def cb_cart(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "🛒 Сабад холист.\n\nТаом илова кунед!",
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("📋 Меню", callback_data="menu")],
-                [InlineKeyboardButton("🏠 Бош меню", callback_data="main_menu")],
+                [InlineKeyboardButton("🏠 Боз меню", callback_data="main_menu")],
             ])
         )
         return
-    text = "🛒 Сабади шумо:\n\n"
+    text = "🛒 *Сабади шумо:*\n\n"
     total = 0
     for i, item in enumerate(cart):
         sub = item["price"] * item["qty"]
         total += sub
-        text += f"{i+1}. {item['name']} x{item['qty']} = {sub} сомон\n"
-    text += f"\nХамаги: {total} сомон"
-    await q.edit_message_text(text, reply_markup=InlineKeyboardMarkup([
+        text += f"{i+1}. {item['name']} x{item['qty']} = {sub} с\n"
+    text += f"\n💰 *Хамаги: {total} сомон*"
+    await q.edit_message_text(text, parse_mode="Markdown", reply_markup=InlineKeyboardMarkup([
         [InlineKeyboardButton("✅ Фармоиш додан", callback_data="checkout")],
         [InlineKeyboardButton("🗑 Тоза кардан", callback_data="clear_cart")],
         [InlineKeyboardButton("📋 Идома", callback_data="menu")],
-        [InlineKeyboardButton("🏠 Бош меню", callback_data="main_menu")],
+        [InlineKeyboardButton("🏠 Боз меню", callback_data="main_menu")],
     ]))
 
 
@@ -228,7 +242,6 @@ async def do_finalize(src, context: ContextTypes.DEFAULT_TYPE):
     order_counter[0] += 1
     order_id = order_counter[0]
 
-    # Сообщение клиенту
     client_text = (
         f"✅ Фармоиши шумо қабул шуд!\n\n"
         f"🔢 Рақами фармоиш: #{order_id}\n"
@@ -238,7 +251,7 @@ async def do_finalize(src, context: ContextTypes.DEFAULT_TYPE):
         f"🛒 Таркиби фармоиш:\n"
     )
     for item in cart:
-        client_text += f"• {item['name']} x{item['qty']} = {item['price']*item['qty']} сомон\n"
+        client_text += f"• {item['name']} x{item['qty']} = {item['price']*item['qty']} с\n"
     client_text += f"\n💰 Хамаги: {total} сомон\n\nБо шумо тамос мегирем. Ташаккур! 🙏"
 
     kb = InlineKeyboardMarkup([[InlineKeyboardButton("🏠 Бош меню", callback_data="main_menu")]])
@@ -250,10 +263,8 @@ async def do_finalize(src, context: ContextTypes.DEFAULT_TYPE):
         client_chat_id = src.message.chat_id
         await src.message.reply_text(client_text, reply_markup=kb)
 
-    # Сохраняем заказ
     active_orders[order_id] = {"client_id": client_chat_id, "name": name, "phone": phone}
 
-    # Уведомление администратору
     admin_text = (
         f"🔔 ЯНГИ ФАРМОИШ #{order_id}!\n\n"
         f"👤 Ном: {name}\n"
@@ -262,7 +273,7 @@ async def do_finalize(src, context: ContextTypes.DEFAULT_TYPE):
         f"🛒 Таркиб:\n"
     )
     for item in cart:
-        admin_text += f"• {item['name']} x{item['qty']} = {item['price']*item['qty']} сомон\n"
+        admin_text += f"• {item['name']} x{item['qty']} = {item['price']*item['qty']} с\n"
     admin_text += f"\n💰 Хамаги: {total} сомон"
 
     admin_kb = InlineKeyboardMarkup([
@@ -301,7 +312,6 @@ async def cb_admin_action(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except Exception as e:
             logging.error(f"Client notify error: {e}")
         await q.edit_message_text(q.message.text + f"\n\n✅ ҚАБУЛ ШУД — {name} огоҳ карда шуд.")
-
     elif action == "reject":
         try:
             await context.bot.send_message(
@@ -373,4 +383,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
