@@ -9,7 +9,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 
 # Токен берётся из переменной окружения (для Railway)
 # Если запускаешь локально — замени на свой токен в кавычках
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "ВСТАВЬ_ТОКЕН_ЗДЕСЬ")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "ВСТАВЬ_ТОКЕН_ЗДЕСЬ") 
+ADMIN_ID = 5660517750
 
 KITCHEN_INFO = {
     "name": "Ошхонаи ЗЕБО",
@@ -229,6 +230,10 @@ async def do_finalize(src, context):
     else:
         await src.message.reply_text(text, reply_markup=kb)
     context.user_data["cart"] = []
+    try:
+        await context.bot.send_message(chat_id=ADMIN_ID, text="🔔 ЯНГИ ФАРМОИШ!\n\n" + text)
+    except Exception:
+        pass
 
 
 async def cb_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
