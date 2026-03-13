@@ -934,42 +934,34 @@ footer {
 </section>
 
 <!-- ORDER -->
-<section class="order-section" id="order">
-  <div class="container">
-    <div class="order-grid">
-      <div class="reveal">
-        <span class="section-label">Онлайн фармоиш</span>
-        <h2 class="section-title light">Фармоиш диҳед</h2>
-        <p style="color:rgba(245,234,208,0.5); margin-bottom:2rem; font-size:0.9rem; line-height:1.7;">
-          Фармоишро онлайн диҳед ва мо ба зудӣ бо шумо тамос мегирем. Ё бевосита аз Telegram бот фармоиш диҳед!
-        </p>
-
-        <form id="orderForm">
-          <div class="form-group">
-            <label class="form-label">Номи шумо</label>
-            <input type="text" class="form-input" placeholder="Исм ва насаб" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Телефон</label>
-            <input type="tel" class="form-input" placeholder="+992 XX XXX XXXX" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Усули гирифтан</label>
-            <select class="form-select">
-              <option>🏃 Худ мегирам</option>
-              <option>🚚 Расонидан ба хона</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Таомҳои дилхоҳ</label>
-            <textarea class="form-textarea" placeholder="Номи таомҳо ва миқдорашонро нависед..."></textarea>
-          </div>
-          <button type="submit" class="btn-gold" style="width:100%;">Фармоиш додан</button>
-          <div class="success-msg" id="successMsg">
-            ✅ Фармоиши шумо қабул шуд! Бо шумо тамос мегирем.
-          </div>
-        </form>
-      </div>
+‎<script>
+‎document.getElementById("orderForm").addEventListener("submit", function(e){
+‎e.preventDefault();
+‎
+‎let name = document.getElementById("name").value;
+‎let phone = document.getElementById("phone").value;
+‎let type = document.getElementById("type").value;
+‎let food = document.getElementById("food").value;
+‎
+‎let message =
+‎"🛒 ЗАКАЗИ НАВ %0A%0A" +
+‎"👤 Ном: " + name + "%0A" +
+‎"📞 Телефон: " + phone + "%0A" +
+‎"🚚 Усул: " + type + "%0A" +
+‎"🍽 Таом: " + food;
+‎
+‎let token = "8656115624:AAF5pN0Ovqaf38N9Zoa_05wFhr3GIhbAuqk";
+‎let chat_id = "5660517750";
+‎
+‎let url = `https://api.telegram.org/bot${8656115624:AAF5pN0Ovqaf38N9Zoa_05wFhr3GIhbAuqk}/sendMessage?chat_id=${5660517750 }&text=${message}`;
+‎
+‎fetch(url)
+‎.then(res=>{
+‎alert("✅ Заказ ба Telegram рафт");
+‎document.getElementById("orderForm").reset();
+‎});
+‎});
+‎</script>
 
       <div class="reveal">
         <div class="order-info-item">
